@@ -11,6 +11,7 @@ options.headless = True
 driver = webdriver.Chrome(options=options)
 # driver(options=options)
 try:
+    print('testing the web app launching the localhost')
     driver.get("http://localhost:3000")
     print("test 1-------login ")
 
@@ -68,34 +69,7 @@ try:
 
 
 except:
-    print('error app not running')
-
-
-
-
-
-    
-# print(password)
-
-# time.sleep(1)
-# if password:
-#     print('test')
-# else:
-#     print('test failed')
-
-# login = driver.find_element("xpath" ,'//*[@id="root"]/div/div/form/button')
-# login.click()
-# time.sleep(10)
-# logout = driver.find_element("xpath" ,'//*[@id="root"]/div/div/button')
-# logout.click()
-
-
-
-# checkbox= driver.find_element("xpath" ,'//*[@id="root"]/div/div/div/input[1]')
-# checkbox.click()
-# time.sleep(10)
-# driver.refresh()
-# time.sleep(10)
+    print('Kindly run the application on local host first')
 
 
 print("end")

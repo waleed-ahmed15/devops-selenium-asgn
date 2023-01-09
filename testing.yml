@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: demployment
+metadata:
+  name: mysql-deployment
+  labels:
+    app: mysqlapp
+
+spec:
+  replica: 4 
+  selector:
+    matchLabels:
+    app: mysqldb
+  template:
+    metadata:
+      name:
+      labels:
+        app: mysqldb
+    spec:
+      containers:
+        name:
+        image:
+        args: ["--default-authenticaion-plugin = mysql-native-password"]
+        ports:
+          -containerPort: 2323
+        env:
+          
